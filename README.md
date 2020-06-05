@@ -1,1 +1,1 @@
-# arch-dotfiles
+# Arch linux personal setup
