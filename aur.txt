@@ -1,0 +1,5 @@
+aic94xx-firmware
+balena-etcher
+brave-bin
+wd719x-firmware
+yay-git
