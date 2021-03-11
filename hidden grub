@@ -1,0 +1,10 @@
+Hide GRUB unless the Shift key is held down
+In order to achieve the fastest possible boot, instead of having GRUB wait for a timeout, it is possible for GRUB to hide the menu, unless the Shift key is held down during GRUB's start-up.
+
+In order to achieve this, you should add the following line to /etc/default/grub:
+
+GRUB_FORCE_HIDDEN_MENU="true"
+Then create the file /etc/grub.d/31_hold_shift containing [1], make it exectuable, and regenerate the grub configuration:
+
+# chmod a+x /etc/grub.d/31_hold_shift
+# grub-mkconfig -o /boot/grub/grub.cfg
