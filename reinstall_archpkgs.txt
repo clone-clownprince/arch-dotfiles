@@ -1,5 +1,0 @@
-#install needed packages
-pacman -S --needed - < archpkg.txt
-
-#install AUR packages
-yay -S - < aurpkglist.txt
